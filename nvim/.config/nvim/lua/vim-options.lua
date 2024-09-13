@@ -25,4 +25,10 @@ vim.keymap.set('n', '<c-j>', 'wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', 'wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', 'wincmd l<CR>')
 
-
+--error line lsp information
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>m',
+  '<cmd>lua vim.diagnostic.open_float(nil, {scope="line", border="rounded", source="always"})<CR>',
+  { noremap = true, silent = true }
+)

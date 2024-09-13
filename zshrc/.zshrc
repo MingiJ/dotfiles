@@ -75,8 +75,6 @@ plugins=(git z compleat colorize)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-# logo-ls
-export PATH=$PATH:/usr/local/bin/logo-ls
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -101,15 +99,18 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"#tmux config
-alias ls="logo-ls"
 # #Starship
 eval "$(starship init zsh)"
+
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/zsh_completion" ] && \. "$NVM_DIR/zsh_completion"
 
 #go
 export PATH=$PATH:/usr/local/bin/go/bin
+
+export PATH=$PATH:/$HOME/.cargo/bin:$PATH
 
 #android studio
 export ANDROID_HOME=/mnt/c/Users/jeffs/AppData/Local/Android/Sdk
@@ -122,11 +123,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
-#pyenv
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 
 # pnpm
 export PNPM_HOME="/home/jeff/.local/share/pnpm"
@@ -135,3 +131,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+#aliases
+alias ls=logo-ls
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/jeff/.pulumi/bin

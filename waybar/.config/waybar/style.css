@@ -66,6 +66,7 @@ button:hover {
 #tray,
 #network,
 #mode,
+#custom-pomodoro,
 #scratchpad {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -83,6 +84,20 @@ button:hover {
 #clock.date {
     color: @mauve;
     border-bottom: 2px solid @mauve;
+}
+
+#cpu{
+  margin-left: 20px;
+  color: @green;
+}
+
+#custom-pomodoro{
+  color: @rosewater;
+}
+
+
+#memory{
+  color: @flamingo;
 }
 
 #pulseaudio {
