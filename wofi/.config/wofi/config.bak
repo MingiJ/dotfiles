@@ -1,0 +1,29 @@
+[settings]
+# Set the available modes (equivalent to modi)
+modes = run,window,drun
+
+# Display icons with Oranchelo theme
+icon-theme = Oranchelo
+show-icons = true
+
+# Set terminal to alacritty
+terminal = alacritty
+
+# Customize the appearance of the drun mode (equivalent to drun-display-format)
+drun-display-format = "{icon} {name}"
+
+# Set the location of the menu (equivalent to location)
+location = top  # Wofi does not have an exact equivalent, but "top" may be the closest
+
+# Enable history
+disable-history = false
+
+# Hide the scrollbar (wofi automatically hides scrollbars, so no specific option here)
+
+# Set custom labels for modes (equivalent to display-* options)
+display-run = "🏃 Run"
+display-window = "🪟 Window"
+display-drun = "🖥️ All"
+
+# Enable sidebar mode (wofi does not have a direct equivalent, but can be styled with CSS)
+sidebar-mode = true

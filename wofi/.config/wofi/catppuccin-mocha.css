@@ -1,0 +1,103 @@
+/* Catppuccin Mocha Theme for Wofi */
+
+/* General settings */
+* {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px;
+    border-color: #1e1e2e;
+}
+
+/* Window settings */
+window {
+    background-color: #fff;
+    border: 3px solid #1e1e2e;
+    padding: 10px;
+    width: 600px;
+    height: 360px;
+    color: white;
+}
+
+/* Input bar */
+#input {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+}
+
+/* Prompt */
+#prompt {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-radius: 3px;
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+}
+
+/* Listview */
+#list {
+    background-color: #1e1e2e;
+    border: none;
+    padding: 6px;
+    margin: 10px 0px 0px 20px;
+    grid-template-columns: repeat(2, 1fr); /* Equivalent to columns: 2 */
+    row-gap: 10px; /* Equivalent to lines: 5 */
+}
+
+/* Element */
+element {
+    padding: 5px;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+element:selected {
+    background-color: #1e1e2e;
+    color: #f38ba8;
+}
+
+/* Element Icon */
+element-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Mode switcher */
+mode-switcher {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    background-color: #1e1e2e;
+    color: #6c7086;
+}
+
+button:selected {
+    background-color: #1e1e2e;
+    color: #89b4fa;
+}
+
+/* Messages */
+message {
+    background-color: #1e1e2e;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* Textbox */
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    background-color: #1e1e2e;
+    color: #89b4fa;
+}
+

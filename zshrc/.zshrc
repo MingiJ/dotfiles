@@ -142,3 +142,30 @@ alias ls=logo-ls
 
 # add Pulumi to the PATH
 export PATH=$PATH:/home/jeff/.pulumi/bin
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jeff/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jeff/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jeff/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jeff/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+conda deactivate
+
+
+#matlab
+alias matlab='bash ~/matlab/bin/matlab' 
+
+#opengl
+export LIBGL_ALWAYS_SOFTWARE=0
+export LD_LIBRARY_PATH=/usr/lib/nvidia:$LD_LIBRARY_PATH
+
+. "/home/jeff/.deno/env"
