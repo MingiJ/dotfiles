@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,16 +108,17 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/zsh_completion" ] && \. "$NVM_DIR/zsh_completion"
 
 #go
-export PATH=$PATH:/usr/local/bin/go/bin
+#export PATH=$PATH:/usr/local/bin/go/bin
+export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:/$HOME/.cargo/bin:$PATH
 
 #android studio
-export ANDROID_HOME=/mnt/c/Users/jeffs/AppData/Local/Android/Sdk
-alias adb=$ANDROID_HOME"/platform-tools/adb.exe"
+#export ANDROID_HOME=/mnt/c/Users/jeffs/AppData/Local/Android/Sdk
+#alias adb=$ANDROID_HOME"/platform-tools/adb.exe"
 
 #nvim
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 #tmuxifier
 export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
@@ -131,9 +132,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+
+
+
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
@@ -141,31 +142,30 @@ eval "$(pyenv init -)"
 alias ls=logo-ls
 
 # add Pulumi to the PATH
-export PATH=$PATH:/home/jeff/.pulumi/bin
+#export PATH=$PATH:/home/jeff/.pulumi/bin
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jeff/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jeff/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jeff/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jeff/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/home/jeff/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/jeff/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/jeff/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/jeff/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
-conda deactivate
+#conda deactivate
 
 
-#matlab
-alias matlab='bash ~/matlab/bin/matlab' 
 
-#opengl
-export LIBGL_ALWAYS_SOFTWARE=0
-export LD_LIBRARY_PATH=/usr/lib/nvidia:$LD_LIBRARY_PATH
+#. "/home/jeff/.deno/env"
 
-. "/home/jeff/.deno/env"
+#pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
