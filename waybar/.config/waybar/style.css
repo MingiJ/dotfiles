@@ -36,10 +36,12 @@ button:hover {
 
 #workspaces button {
     padding: 0 4px;
+  /*white mode*/
+    /*color: rgba(0,0,0,0.3);*/
 }
 
 #workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     color: @rosewater;
     border-top: 2px solid @rosewater;
 }

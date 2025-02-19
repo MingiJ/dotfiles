@@ -1,6 +1,6 @@
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
-include mocha.conf
+# Catppuccin-Latte
+include current-theme.conf
 # END_KITTY_THEME
 #
 # font_family Fira Code
@@ -8,11 +8,11 @@ include mocha.conf
 # italic_font auto
 # bold_italic_font auto
 
-background_opacity 0.92
+background_opacity 1
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="MesloLGMDZ Nerd Font Mono"
+font_family      family="FiraCode Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

@@ -3,7 +3,7 @@
   "modules-left": ["hyprland/workspaces", "cpu", "memory", "custom/pomodoro"],
   "modules-right": [ "network", "pulseaudio", "battery", "clock"],
   "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
+    "format": "<span foreground='#e64553'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
@@ -11,22 +11,21 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format": "<span size='13000' foreground='#40a02b'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#df8e1d'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#d20f39'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#40a02b'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#40a02b'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#40a02b'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#40a02b'> </span>{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
   },
-
   "network": {
-    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid} ({signalStrength}%)",
-    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰈀  </span>  {ipaddr}",
+    "format-wifi": "<span size='13000' foreground='#dc8a78'>  </span>{essid} ({signalStrength}%)",
+    "format-ethernet": "<span size='13000' foreground='#dc8a78'>󰈀  </span>  {ipaddr}",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>󰖪  </span>Disconnected",
+    "format-disconnected": "<span size='13000' foreground='#dc8a78'>󰖪  </span>Disconnected",
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
     "tooltip-format-ethernet": "󰈀 {ifname}\n⬆️ {bandwidthUpBits} ⬇️ {bandwidthDownBits}",
@@ -35,8 +34,8 @@
   },
   "pulseaudio": {
     "on-click": "pavucontrol &",
-    "format": "<span size='13000' foreground='#89b4fa'>{icon} </span> {volume}%",
-    "format-muted": "<span size='14000' foreground='#89b4fa'></span> Muted",
+    "format": "<span size='13000' foreground='#1e66f5'>{icon} </span> {volume}%",
+    "format-muted": "<span size='14000' foreground='#1e66f5'></span> Muted",
     "format-icons": {
       "headphone": "",
       "hands-free": "",

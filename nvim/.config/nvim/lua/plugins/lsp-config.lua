@@ -29,7 +29,7 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
       })
-      lspconfig.pylsp.setup({
+      lspconfig.pyright.setup({
         capabilities = capabilities,
       })
       lspconfig.tailwindcss.setup({
